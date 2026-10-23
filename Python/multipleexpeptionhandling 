@@ -1,0 +1,36 @@
+# Python program to demonstrate multiple exception handling
+
+try:
+    # Read two numbers from the user
+    num1 = int(input("Enter the first number: "))
+    num2 = int(input("Enter the second number: "))
+
+    # Perform division
+    result = num1 / num2
+
+    # Display the result
+    print("Division result:", result)
+
+    # Access an element from a list
+    numbers = [10, 20, 30]
+    index = int(input("Enter the list index (0 to 2): "))
+
+    print("List element:", numbers[index])
+
+except ValueError:
+    print("Error: Please enter valid integers.")
+
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")
+
+except IndexError:
+    print("Error: List index is out of range.")
+
+except TypeError:
+    print("Error: An operation was performed on incompatible types.")
+
+else:
+    print("All operations completed successfully.")
+
+finally:
+    print("Program execution completed.")
