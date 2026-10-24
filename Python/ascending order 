@@ -1,0 +1,14 @@
+# Python program to sort a list using Bubble Sort
+
+numbers = [50, 10, 40, 20, 30]
+
+print("Original list:", numbers)
+
+n = len(numbers)
+
+for i in range(n - 1):
+    for j in range(n - 1 - i):
+        if numbers[j] > numbers[j + 1]:
+            numbers[j], numbers[j + 1] = numbers[j + 1], numbers[j]
+
+print("Ascending order:", numbers)
