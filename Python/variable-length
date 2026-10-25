@@ -1,0 +1,16 @@
+# Python program to demonstrate variable-length arguments using *args
+
+def add_numbers(*args):
+    total = 0
+
+    for num in args:
+        total = total + num
+
+    print("Arguments:", args)
+    print("Sum of numbers:", total)
+
+
+# Function calls with different numbers of arguments
+add_numbers(10, 20)
+add_numbers(10, 20, 30)
+add_numbers(5, 10, 15, 20, 25)
