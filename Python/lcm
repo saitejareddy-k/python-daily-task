@@ -1,0 +1,24 @@
+# Python program to find the LCM of two numbers
+
+# Read two numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+
+# Handle zero values
+if a == 0 or b == 0:
+    print("LCM is 0")
+else:
+    # Start with the greater number
+    if a > b:
+        lcm = a
+    else:
+        lcm = b
+
+    # Find the LCM
+    while True:
+        if lcm % a == 0 and lcm % b == 0:
+            break
+        lcm += 1
+
+    # Display the result
+    print("LCM of", a, "and", b, "is", lcm)
