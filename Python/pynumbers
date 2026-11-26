@@ -1,0 +1,7 @@
+>>> a = 5
+>>> type(a)
+<class 'int'>
+>>> type(2.0)
+<class 'float'>
+>>> isinstance(1+2j,complex)
+True
